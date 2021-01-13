@@ -1,0 +1,17 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings</title>
+</head>
+<body>
+    <h1>Greetings!!</h1>
+    <img src="{% static 'img/bear.gif' %}" alt="bear-wave">
+    {% for greeting in greeting_list %}
+    <p style="font-size: 24px; margin: 0.5rem; color:cornflowerblue;">{{ greeting.text }}</p>
+    {% endfor %}
+</body>
+</html>
